@@ -4,7 +4,7 @@ use std::process;
 use minigrep_0_2::Config; 
 
 fn main() {
-    let args: Vec <String> = env::args().collect();         // env::args() function returns an iterator - .collect() into a Vec - 
+    let args: Vec <String> = env::args().collect();     // env::args() function returns an iterator - .collect() into a Vec - 
 
     let config= Config::new (&args).unwrap_or_else(|err| {
         eprintln! ("Problem parsing arguments: {}", err); 
